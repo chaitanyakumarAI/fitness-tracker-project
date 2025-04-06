@@ -68,4 +68,5 @@ def heatmap():
     return send_file(image_path, mimetype='image/png')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Render dynamically assigns the port
+    app.run(host='0.0.0.0', port=port)

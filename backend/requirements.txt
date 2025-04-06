@@ -1,0 +1,7 @@
+Flask
+gunicorn
+pandas
+Flask-CORS
+matplotlib
+seaborn
+sqlite3
